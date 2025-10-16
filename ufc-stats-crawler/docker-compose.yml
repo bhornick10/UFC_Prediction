@@ -1,0 +1,71 @@
+# docker-compose.yml
+
+services:
+  # ----------------- Static web UI on port 8099 -----------------
+  web:
+    image: nginx:alpine
+    container_name: ufc-web
+    ports:
+      - "8099:80"   # UI at http://<server>:8099
+    volumes:
+      - ./webui/index.html:/usr/share/nginx/html/index.html:ro
+      - ./data:/usr/share/nginx/html/data:ro
+    restart: unless-stopped
+
+  # ----------------- One-shot job: fighter_stats ----------------
+  # Writes data/fighter_stats/latest.csv
+  run_fighters:
+    image: python:3.10-slim
+    working_dir: /app
+    environment:
+      - PIP_DISABLE_PIP_VERSION_CHECK=1
+    volumes:
+      - .:/app
+    entrypoint:
+      - sh
+      - -lc
+      - |
+        set -e
+        pip install -q --no-cache-dir 'regex==2021.11.10' 'dateparser==0.7.2' 'Scrapy==2.8.0' 'Twisted==21.7.0'
+        python -m scrapy crawl ufcFighters -o data/fighter_stats/latest.csv
+
+  # ----------------- One-shot job: fights -----------------------
+  # Runs the spider; copies newest fight_info/*.csv -> fight_info/latest.csv
+  run_fights:
+    image: python:3.10-slim
+    working_dir: /app
+    environment:
+      - PIP_DISABLE_PIP_VERSION_CHECK=1
+    volumes:
+      - .:/app
+    entrypoint:
+      - sh
+      - -lc
+      - |
+        set -e
+        pip install -q --no-cache-dir 'regex==2021.11.10' 'dateparser==0.7.2' 'Scrapy==2.8.0' 'Twisted==21.7.0'
+        python -m scrapy crawl ufcFights
+        mkdir -p data/fight_info
+        LATEST_FILE=$$(ls -t data/fight_info/*.csv 2>/dev/null | head -n1 || true)
+        if [ -n "$$LATEST_FILE" ]; then
+          cp -f "$$LATEST_FILE" data/fight_info/latest.csv
+        else
+          echo "No fight_info CSV produced (check spider output)."
+        fi
+
+  # ----------------- One-shot job: upcoming ---------------------
+  # Writes data/upcoming/latest.csv
+  run_upcoming:
+    image: python:3.10-slim
+    working_dir: /app
+    environment:
+      - PIP_DISABLE_PIP_VERSION_CHECK=1
+    volumes:
+      - .:/app
+    entrypoint:
+      - sh
+      - -lc
+      - |
+        set -e
+        pip install -q --no-cache-dir 'regex==2021.11.10' 'dateparser==0.7.2' 'Scrapy==2.8.0' 'Twisted==21.7.0'
+        python -m scrapy crawl upcoming -o data/upcoming/latest.csv

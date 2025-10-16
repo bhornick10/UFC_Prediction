@@ -1,0 +1,229 @@
+2025-09-17 19:52:22 [scrapy.utils.log] INFO: Scrapy 2.8.0 started (bot: ufcStats)
+2025-09-17 19:52:22 [scrapy.utils.log] INFO: Versions: lxml 6.0.1.0, libxml2 2.14.5, cssselect 1.3.0, parsel 1.10.0, w3lib 2.3.1, Twisted 21.7.0, Python 3.10.18 (main, Sep  8 2025, 21:42:39) [GCC 14.2.0], pyOpenSSL 25.3.0 (OpenSSL 3.5.3 16 Sep 2025), cryptography 46.0.1, Platform Linux-6.1.0-37-amd64-x86_64-with-glibc2.41
+2025-09-17 19:52:22 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ufcStats',
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'LOG_FILE': 'log/2025-09-17T19-52-20.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'ufcStats.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['ufcStats.spiders']}
+2025-09-17 19:52:22 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/utils/request.py:232: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2025-09-17 19:52:22 [scrapy.extensions.telnet] INFO: Telnet Password: 3788645f34a0bc99
+2025-09-17 19:52:22 [scrapy.utils.log] INFO: Scrapy 2.8.0 started (bot: ufcStats)
+2025-09-17 19:52:22 [scrapy.utils.log] INFO: Versions: lxml 6.0.1.0, libxml2 2.14.5, cssselect 1.3.0, parsel 1.10.0, w3lib 2.3.1, Twisted 21.7.0, Python 3.10.18 (main, Sep  8 2025, 21:42:39) [GCC 14.2.0], pyOpenSSL 25.3.0 (OpenSSL 3.5.3 16 Sep 2025), cryptography 46.0.1, Platform Linux-6.1.0-37-amd64-x86_64-with-glibc2.41
+2025-09-17 19:52:22 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ufcStats',
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'LOG_FILE': 'log/2025-09-17T19-52-20.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'ufcStats.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['ufcStats.spiders']}
+2025-09-17 19:52:22 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/utils/request.py:232: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2025-09-17 19:52:22 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/extensions/feedexport.py:315: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+2025-09-17 19:52:22 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2025-09-17 19:52:22 [scrapy.extensions.telnet] INFO: Telnet Password: 4ded243522f39a15
+2025-09-17 19:52:22 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/extensions/feedexport.py:315: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+2025-09-17 19:52:22 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2025-09-17 19:52:22 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-09-17 19:52:22 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-09-17 19:52:22 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-09-17 19:52:22 [scrapy.core.engine] INFO: Spider opened
+2025-09-17 19:52:23 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-09-17 19:52:23 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-09-17 19:52:23 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-09-17 19:52:23 [scrapy.core.engine] INFO: Spider opened
+2025-09-17 19:52:23 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-09-17 19:52:23 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-09-17 19:52:23 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-09-17 19:52:23 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-09-17 19:52:24 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/selector/unified.py:83: UserWarning: Selector got both text and root, root is being ignored.
+  super().__init__(text=text, type=st, root=root, **kwargs)
+
+2025-09-17 19:52:24 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/selector/unified.py:83: UserWarning: Selector got both text and root, root is being ignored.
+  super().__init__(text=text, type=st, root=root, **kwargs)
+
+2025-09-17 19:52:24 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/selector/unified.py:83: UserWarning: Selector got both text and root, root is being ignored.
+  super().__init__(text=text, type=st, root=root, **kwargs)
+
+2025-09-17 19:52:25 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/selector/unified.py:83: UserWarning: Selector got both text and root, root is being ignored.
+  super().__init__(text=text, type=st, root=root, **kwargs)
+
+2025-09-17 19:52:25 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/selector/unified.py:83: UserWarning: Selector got both text and root, root is being ignored.
+  super().__init__(text=text, type=st, root=root, **kwargs)
+
+2025-09-17 19:52:25 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/selector/unified.py:83: UserWarning: Selector got both text and root, root is being ignored.
+  super().__init__(text=text, type=st, root=root, **kwargs)
+
+2025-09-17 19:52:26 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/selector/unified.py:83: UserWarning: Selector got both text and root, root is being ignored.
+  super().__init__(text=text, type=st, root=root, **kwargs)
+
+2025-09-17 19:52:26 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/selector/unified.py:83: UserWarning: Selector got both text and root, root is being ignored.
+  super().__init__(text=text, type=st, root=root, **kwargs)
+
+2025-09-17 19:52:27 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/selector/unified.py:83: UserWarning: Selector got both text and root, root is being ignored.
+  super().__init__(text=text, type=st, root=root, **kwargs)
+
+2025-09-17 19:52:27 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/selector/unified.py:83: UserWarning: Selector got both text and root, root is being ignored.
+  super().__init__(text=text, type=st, root=root, **kwargs)
+
+2025-09-17 19:52:28 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/selector/unified.py:83: UserWarning: Selector got both text and root, root is being ignored.
+  super().__init__(text=text, type=st, root=root, **kwargs)
+
+2025-09-17 19:52:29 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/selector/unified.py:83: UserWarning: Selector got both text and root, root is being ignored.
+  super().__init__(text=text, type=st, root=root, **kwargs)
+
+2025-09-17 19:52:29 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/selector/unified.py:83: UserWarning: Selector got both text and root, root is being ignored.
+  super().__init__(text=text, type=st, root=root, **kwargs)
+
+2025-09-17 19:52:30 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/selector/unified.py:83: UserWarning: Selector got both text and root, root is being ignored.
+  super().__init__(text=text, type=st, root=root, **kwargs)
+
+2025-09-17 19:52:30 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/selector/unified.py:83: UserWarning: Selector got both text and root, root is being ignored.
+  super().__init__(text=text, type=st, root=root, **kwargs)
+
+2025-09-17 19:52:31 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/selector/unified.py:83: UserWarning: Selector got both text and root, root is being ignored.
+  super().__init__(text=text, type=st, root=root, **kwargs)
+
+2025-09-17 19:52:32 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/selector/unified.py:83: UserWarning: Selector got both text and root, root is being ignored.
+  super().__init__(text=text, type=st, root=root, **kwargs)
+
+2025-09-17 19:52:32 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/selector/unified.py:83: UserWarning: Selector got both text and root, root is being ignored.
+  super().__init__(text=text, type=st, root=root, **kwargs)
+
+2025-09-17 19:52:33 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/selector/unified.py:83: UserWarning: Selector got both text and root, root is being ignored.
+  super().__init__(text=text, type=st, root=root, **kwargs)
+
+2025-09-17 19:52:33 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-09-17 19:52:33 [scrapy.extensions.feedexport] INFO: Stored csv feed (15 items) in: data/upcoming/2025-09-17T19-52-22.csv
+2025-09-17 19:52:33 [scrapy.extensions.feedexport] INFO: Stored csv feed (15 items) in: data/upcoming/latest.csv
+2025-09-17 19:52:33 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 5306,
+ 'downloader/request_count': 18,
+ 'downloader/request_method_count/GET': 18,
+ 'downloader/response_bytes': 57077,
+ 'downloader/response_count': 18,
+ 'downloader/response_status_count/200': 17,
+ 'downloader/response_status_count/404': 1,
+ 'dupefilter/filtered': 15,
+ 'elapsed_time_seconds': 10.02737,
+ 'feedexport/success_count/FileFeedStorage': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 9, 17, 19, 52, 33, 479185),
+ 'httpcompression/response_bytes': 359831,
+ 'httpcompression/response_count': 17,
+ 'item_scraped_count': 15,
+ 'log_count/INFO': 12,
+ 'log_count/WARNING': 5,
+ 'memusage/max': 75366400,
+ 'memusage/startup': 75366400,
+ 'request_depth_max': 2,
+ 'response_received_count': 18,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 17,
+ 'scheduler/dequeued/memory': 17,
+ 'scheduler/enqueued': 17,
+ 'scheduler/enqueued/memory': 17,
+ 'start_time': datetime.datetime(2025, 9, 17, 19, 52, 23, 451815)}
+2025-09-17 19:52:33 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-09-17 19:52:33 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/selector/unified.py:83: UserWarning: Selector got both text and root, root is being ignored.
+  super().__init__(text=text, type=st, root=root, **kwargs)
+
+2025-09-17 19:52:34 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/selector/unified.py:83: UserWarning: Selector got both text and root, root is being ignored.
+  super().__init__(text=text, type=st, root=root, **kwargs)
+
+2025-09-17 19:52:34 [py.warnings] WARNING: /usr/local/lib/python3.10/site-packages/scrapy/selector/unified.py:83: UserWarning: Selector got both text and root, root is being ignored.
+  super().__init__(text=text, type=st, root=root, **kwargs)
+
+2025-09-17 19:53:23 [scrapy.extensions.logstats] INFO: Crawled 99 pages (at 99 pages/min), scraped 80 items (at 80 items/min)
+2025-09-17 19:54:23 [scrapy.extensions.logstats] INFO: Crawled 199 pages (at 100 pages/min), scraped 180 items (at 100 items/min)
+2025-09-17 19:55:23 [scrapy.extensions.logstats] INFO: Crawled 300 pages (at 101 pages/min), scraped 281 items (at 101 items/min)
+2025-09-17 19:56:23 [scrapy.extensions.logstats] INFO: Crawled 397 pages (at 97 pages/min), scraped 378 items (at 97 items/min)
+2025-09-17 19:57:23 [scrapy.extensions.logstats] INFO: Crawled 497 pages (at 100 pages/min), scraped 478 items (at 100 items/min)
+2025-09-17 19:58:23 [scrapy.extensions.logstats] INFO: Crawled 593 pages (at 96 pages/min), scraped 574 items (at 96 items/min)
+2025-09-17 19:59:23 [scrapy.extensions.logstats] INFO: Crawled 690 pages (at 97 pages/min), scraped 671 items (at 97 items/min)
+2025-09-17 20:00:23 [scrapy.extensions.logstats] INFO: Crawled 787 pages (at 97 pages/min), scraped 768 items (at 97 items/min)
+2025-09-17 20:01:23 [scrapy.extensions.logstats] INFO: Crawled 885 pages (at 98 pages/min), scraped 866 items (at 98 items/min)
+2025-09-17 20:02:23 [scrapy.extensions.logstats] INFO: Crawled 982 pages (at 97 pages/min), scraped 963 items (at 97 items/min)
+2025-09-17 20:03:23 [scrapy.extensions.logstats] INFO: Crawled 1049 pages (at 67 pages/min), scraped 1030 items (at 67 items/min)
+2025-09-17 20:04:23 [scrapy.extensions.logstats] INFO: Crawled 1120 pages (at 71 pages/min), scraped 1101 items (at 71 items/min)
+2025-09-17 20:05:23 [scrapy.extensions.logstats] INFO: Crawled 1220 pages (at 100 pages/min), scraped 1201 items (at 100 items/min)
+2025-09-17 20:06:23 [scrapy.extensions.logstats] INFO: Crawled 1316 pages (at 96 pages/min), scraped 1297 items (at 96 items/min)
+2025-09-17 20:07:23 [scrapy.extensions.logstats] INFO: Crawled 1417 pages (at 101 pages/min), scraped 1398 items (at 101 items/min)
+2025-09-17 20:08:23 [scrapy.extensions.logstats] INFO: Crawled 1516 pages (at 99 pages/min), scraped 1496 items (at 98 items/min)
+2025-09-17 20:09:23 [scrapy.extensions.logstats] INFO: Crawled 1614 pages (at 98 pages/min), scraped 1595 items (at 99 items/min)
+2025-09-17 20:10:23 [scrapy.extensions.logstats] INFO: Crawled 1711 pages (at 97 pages/min), scraped 1692 items (at 97 items/min)
+2025-09-17 20:11:23 [scrapy.extensions.logstats] INFO: Crawled 1812 pages (at 101 pages/min), scraped 1793 items (at 101 items/min)
+2025-09-17 20:12:23 [scrapy.extensions.logstats] INFO: Crawled 1911 pages (at 99 pages/min), scraped 1892 items (at 99 items/min)
+2025-09-17 20:13:23 [scrapy.extensions.logstats] INFO: Crawled 2009 pages (at 98 pages/min), scraped 1990 items (at 98 items/min)
+2025-09-17 20:14:23 [scrapy.extensions.logstats] INFO: Crawled 2109 pages (at 100 pages/min), scraped 2090 items (at 100 items/min)
+2025-09-17 20:15:23 [scrapy.extensions.logstats] INFO: Crawled 2205 pages (at 96 pages/min), scraped 2186 items (at 96 items/min)
+2025-09-17 20:16:23 [scrapy.extensions.logstats] INFO: Crawled 2301 pages (at 96 pages/min), scraped 2282 items (at 96 items/min)
+2025-09-17 20:17:23 [scrapy.extensions.logstats] INFO: Crawled 2401 pages (at 100 pages/min), scraped 2382 items (at 100 items/min)
+2025-09-17 20:18:23 [scrapy.extensions.logstats] INFO: Crawled 2499 pages (at 98 pages/min), scraped 2480 items (at 98 items/min)
+2025-09-17 20:19:23 [scrapy.extensions.logstats] INFO: Crawled 2595 pages (at 96 pages/min), scraped 2576 items (at 96 items/min)
